@@ -1,0 +1,783 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "p-info"
+        "companies"
+        "download-b"
+        "footer";
+
+    grid-template-columns: 1fr;
+    font-size: 1.8rem;
+    transition: 2s ease-in-out;
+
+    font-family: 'Bai Jamjuree', sans-serif;
+ }
+
+p {
+    line-height: 1.5;
+}
+
+
+
+.none {
+    display: none;
+}
+
+
+.c-header {
+    grid-area: header;
+    background: url(../images/bg-header-mobile.png) no-repeat;
+    background-size: 100% 55%;
+    padding: 0 0 1vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10vh;
+    
+    /* clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 84%, 80% 100%, 51% 100%, 21% 100%, 0 86%, 0% 35%, 0 0); */
+}
+
+
+.c-header .logo-header {
+    width: 30vw;
+
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+
+
+}
+
+.c-header .logo-header img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.c-header h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--darkzin);
+    margin-bottom: 2vh;
+    padding: 0 1.5vw 0 1.5vw;
+
+
+
+}
+
+.c-header p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--dark-white);
+    margin-bottom: 4vh;
+    padding: 0 1.5vw 0 1.5vw;
+}
+
+.c-header .download-header,
+.c-download {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+
+}
+
+.c-header .download-header .link,
+.c-download .link {
+    font-weight: 500;
+    border-radius: 5rem;
+    font-size: 2rem;
+    width: 80vw;
+    height: 5vh;
+    border: 1px solid;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-header .download-header .d-ios,
+.c-download .d-ios {
+    background: var(--Strong-Cyan);
+    border: 0px solid ;
+    outline: 2px solid var(--Strong-Cyan);
+    outline-offset: -1px;
+    transition: all 550ms cubic-bezier(
+        .36,.63,.5,.73
+    );
+    
+}
+
+.c-header .download-header .d-ios:hover,
+.c-download .d-ios:hover {
+    
+    outline-color: rgba(255, 255, 255, 0);
+    background: var(--Strong-Cyan-op);
+    outline-offset: 10px;
+    box-shadow: 0rem 0rem, 0rem 0rem 0.7rem hsla(171, 66%, 44%, 0.9);
+    
+}
+
+.c-header .download-header .d-mac,
+.c-download .d-mac {
+
+    background: var(--Light-Blue);
+    border: 0px solid;
+    outline: 2px solid var(--Light-Blue);
+    outline-offset: -1px;
+    transition: all 550ms cubic-bezier(
+        .36,.63,.5,.73);
+
+}
+
+.c-header .download-header .d-mac:hover,
+.c-download .d-mac:hover {
+    background: var(--Light-Blue-op);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 10px;
+    box-shadow: 0rem 0rem, 0rem 0rem 1rem hsla(233, 100%, 69%, 0.9);
+
+}
+
+
+
+.princ-info {
+    grid-area: p-info;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8vh;
+    
+}
+
+.princ-info .title-main {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--darkzin);
+    margin-bottom: 2vh;
+    padding: 0 1.5vw 0 1.5vw;
+}
+
+.princ-info .desc-main {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--dark-white);
+    margin-bottom: 4vh;
+    padding: 0 1.5vw 0 1.5vw;
+
+}
+
+.princ-info .info-pc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15vh;
+}
+
+.princ-info .c-img-pc {
+    width: 80vw;
+    margin-bottom: 5vh;
+
+}
+
+.princ-info .c-img-pc .img-pc {
+    width: 100%;
+}
+
+.princ-info .c-img-devices {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+    width: 90%;
+}
+
+.princ-info .c-img-devices .img-devices {
+    width: 100%;
+}
+
+.princ-info .description-info3 {
+    margin-bottom: 8vh;
+}
+
+
+
+.princ-info .inf-differential .box-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.princ-info .inf-differential .box-icon .icon {
+    margin-bottom: 3.5vh;
+}
+
+.princ-info .inf-differential .title-inf-d {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--darkzin);
+    margin-bottom: 2vh;
+    padding: 0 1.5vw 0 1.5vw;
+
+}
+
+.princ-info .inf-differential .desc-ind-d {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--dark-white);
+    margin-bottom: 4vh;
+    padding: 0 1.5vw 0 1.5vw;
+
+}
+
+    .seta-container{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        opacity: 0;
+        transition: 1.5s ease-in-out;
+        animation: downarrow 2s infinite alternate ease-in;   
+    }
+
+    .seta-container.mostrar {
+        opacity: 1;
+        
+      }
+
+      .none{
+        display: none;
+      }
+
+      .filter-invert{
+        filter: invert(1);
+      }
+
+    .seta-container img {
+        width: 30px;
+        cursor: pointer;
+        transform: rotateX(180deg);
+    }
+
+.companies {
+    grid-area: companies;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7vh;
+
+    margin-bottom: 15vh;
+}
+
+
+
+.download-area-b {
+    grid-area: download-b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+
+
+}
+
+.download-area-b .title-download {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--darkzin);
+    margin-bottom: 2vh;
+    padding: 0 1.5vw 0 1.5vw;
+}
+
+.download-area-b .desc-tdown {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--dark-white);
+    margin-bottom: 4vh;
+    padding: 0 1.5vw 0 1.5vw;
+
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: var(--dark-white-op);
+}
+
+.footer .logo-footer {
+    width: 8vw;
+    margin: 3vh 0 3vh 0;
+    animation: downarrow 0.6s infinite alternate ease-in-out;
+    cursor: pointer;
+}
+
+.footer .about-us {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin-bottom: 2vh;
+}
+
+.footer .about-us a {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--darkzin);
+    transition: 0.3s ease-in-out;
+}
+
+.footer .about-us a:hover {
+    color: var(--Strong-Cyan);
+
+}
+
+.footer .social {
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: 3vh;
+}
+
+.footer .social i {
+    font-size: 2rem;
+    color: var(--darkzin);
+    transition: 0.3s ease-in-out;
+}
+
+.footer .social i:hover {
+    color: var(--Strong-Cyan);
+
+}
+
+.footer .attribution {
+    color: var(--darkzin);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 2vh;
+}
+
+
+.footer .attribution .link-fem {
+        font-size: 0.7rem;
+    font-weight: 600;
+    color: rgb(187, 13, 13);
+    border-radius: 50px;
+    padding: 0.1rem 0.2rem 0.1rem 0.2rem;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.footer .attribution .link-fem:hover {
+    font-size: 0.8rem;
+    color: rgb(81, 81, 167);
+    
+    border-radius: 50px;
+}
+
+.footer .attribution strong {
+    font-size: 0.7rem;
+    font-weight: 600;
+transition: font-size 0.3s ease-in-out;
+    color: red;
+
+}
+
+.footer .attribution strong:hover {
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+@media (min-width:500px) {
+
+    .princ-info .c-img-pc {
+        width: 60vw;
+    }
+
+    .princ-info .c-img-devices {
+        width: 70vw;
+    }
+}
+
+@media (min-width:700px) {
+
+    .princ-info .c-img-pc {
+        width: 60vw;
+        
+    }
+
+    .princ-info .c-img-devices {
+        width: 65vw;
+        
+    }
+
+
+
+}
+
+@media (min-width:900px) {
+
+    body {
+        display: grid;
+        grid-template-areas:
+            "header header header header header"
+            "p-info p-info p-info p-info p-info"
+            "companies companies companies companies companies"
+            "download-b download-b download-b download-b download-b"
+            "footer footer footer footer footer";
+
+        grid-template-columns: repeat(5, 1fr);
+        font-size: 1.6rem;
+    }
+
+    .c-header {
+        background: url(../images/bg-header-desktop.png)no-repeat;
+        background-size: 100% 70%;
+        
+    }
+
+    .c-header .logo-header {
+        width: 10vw;
+
+    }
+
+
+
+    .c-header p {
+
+        width: 60vw;
+    }
+
+    .c-header .download-header,
+    .c-download {
+        display: flex;
+        flex-direction: row;
+
+
+
+    }
+
+    .c-header .download-header .link,
+    .c-download .link {
+
+        font-size: 1.5rem;
+        width: 20vw;
+
+    }
+
+
+
+
+
+    .princ-info .desc-main {
+        font-size: 1.8rem;
+        font-weight: 500;
+        text-align: center;
+        color: var(--dark-white);
+        margin-bottom: 7vh;
+        padding: 0 1.5vw 0 1.5vw;
+        width: 60vw;
+
+    }
+
+    .princ-info .info-pc {
+        display: grid;
+        grid-template-areas:
+            "img-pc description-1"
+            "img-pc description-2"
+            "img-pc description-3";
+
+        grid-column-gap: 0rem;
+
+        grid-template-columns: 60vw 1fr;
+    }
+
+    .princ-info .c-img-pc {
+        grid-area: img-pc;
+        width: 50vw;
+        height: auto;
+        margin-bottom: 0vh;
+        position: relative;
+        right: 4vh;
+
+    }
+
+    .princ-info .item-box .title-main {
+        font-size: 2rem;
+        text-align: start;
+        font-weight: 600;
+        color: var(--darkzin);
+        margin-bottom: 2vh;
+        padding: 0 1.5vw 0 1.5vw;
+    }
+
+    .princ-info .item-box .desc-main {
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: start;
+        color: var(--dark-white);
+        margin-bottom: 2vh;
+        padding: 0 1.5vw 0 1.5vw;
+
+        width: 28vw;
+
+    }
+
+
+
+    .princi-info .info-pc .description-pc1 {
+        grid-area: description-pc1;
+    }
+
+    .princi-info .info-pc .description-pc2 {
+        grid-area: description-pc2;
+    }
+
+    .princi-info .info-pc .description-pc3 {
+        grid-area: description-pc3;
+    }
+
+
+    .princ-info .c-img-devices {
+        width: 60vw;
+        margin-top: 2vh;
+    }
+
+    .princ-info .description-info3 {
+        margin-bottom: 8vh;
+    }
+
+    .princ-info .inf-differential {
+        width: 90vw;
+        display: flex;
+        margin-top: 2vh;
+    }
+
+    .princ-info .inf-differential .box-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .companies {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 5vh;
+        width: 80vw;
+        margin-left: 10vw;
+        margin-bottom: 15vh;
+    }
+
+    .companies img {
+        width: 15%;
+
+    }
+
+    .download-area-b {
+        margin-bottom: 15vh;
+    }
+
+    .download-area-b .desc-tdown {
+        width: 70vw;
+
+    }
+
+    .footer {
+        grid-area: footer;
+        display: grid;
+
+        grid-template-areas:
+            "logo-fo about-us social"
+            "logo-fo credits credits";
+
+    }
+
+    .footer .logo-footer {
+        grid-area: logo-fo;
+        width: 4vw;
+        margin: 0vh 8vw 0vh 10vw;
+        position: relative;
+        bottom: 2vh;
+    }
+
+    .footer .about-us {
+        grid-area: about-us;
+        display: grid;
+        grid-template-areas:
+            "faqs  policy install-g"
+            "contact press-k .";
+
+            grid-template-columns: 8rem 8rem 8rem;
+
+
+        margin: 4vh 0vw 2vh 0;
+        position: relative;
+        right: 8rem;
+    }
+
+    .footer .about-us .faqs {
+        grid-area: faqs;
+    }
+
+    .footer .about-us .contact {
+        grid-area: contact;
+    }
+
+    .footer .about-us .p-policy {
+        grid-area: policy
+    }
+
+    .footer .about-us .press-k {
+        grid-area: press-k;
+    }
+
+    .footer .about-us .install-g {
+        grid-area: install-g;
+    }
+
+
+    .footer .about-us a {
+
+        text-align: start;
+
+    }
+
+    .footer .attribution {
+        grid-area: credits;
+        position: relative;
+        left: 25vw;
+        width: 35rem;
+    }
+
+    .footer .social {
+        grid-area: social;
+        position: relative;
+        top: 2vh;
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
+@media (min-width:1100px) {
+
+    .princ-info .info-pc .c-img-pc {
+        width: 55vw;
+    }
+
+    .princ-info .item-box .title-main {
+        font-size: 2.5rem;
+       
+    }
+
+    .princ-info .item-box .desc-main {
+        font-size: 1.8rem;
+        font-weight: 500;
+        text-align: start;
+        color: var(--dark-white);
+        margin-bottom: 1.5vh;
+        padding: 0 1.5vw 0 1.5vw;
+        width: 28vw;
+    }
+
+    .princ-info .c-img-devices {
+        width: 50vw;
+        height: 43vh;
+        margin-top: 2vh;
+    }
+
+}
+@media (min-width:1260px) {
+
+    .princ-info .info-pc {
+      
+        grid-template-columns: 50vw 1fr;
+    }
+
+
+    .princ-info .info-pc .c-img-pc {
+        width: 50vw;
+    }
+
+    .princ-info .c-img-devices {
+        width: 45vw;
+        height: auto;
+        margin-top: 2vh;
+    }
+
+}
+
+/*  =============================== MANIPULAÇÃO COM JS ====== MODO NOTURNO ================================ */
+
+.container-modo-noturno {
+    position: relative;
+    top: 10vh;
+    right: 20vw;
+    width: 40vw;
+   }
+
+.btnDiurno{
+    position: absolute;
+    left: 0;
+    animation: downarrow 0.6s infinite alternate ease-in-out;
+    cursor: pointer;
+    
+}
+
+.btnNoturno{
+    animation: downarrow 0.6s infinite alternate ease-in-out;
+    cursor: pointer;
+    
+}
+
+.noturno{
+    background-color: black;
+}
+
+.diurno{
+    background-color: #fff;
+}
+
+.none {
+    display: none;
+}
+
+@keyframes downarrow {
+    0% {
+        -webkit-transform: translateY(0);
+        
+    }
+
+    100% {
+        -webkit-transform: translateY(10px);
+        
+    }
+}
+
+/* ============ Responsive Container Modo Noturno ========= */
+@media (max-width:768px) {
+    .container-modo-noturno .btnNoturno,.btnDiurno {
+        width: 8vw ;
+    }
+}
+
+@media (max-width: 550px) {
+    
+    .container-modo-noturno .btnNoturno,.btnDiurno {
+        width: 10vw ;
+    }
+    
+}
