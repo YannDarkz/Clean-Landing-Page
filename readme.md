@@ -19,4 +19,4 @@
 * Logo no Footer para interagir com o usuario e reforçar o scroll para o topo da página com um click
 
 ## Desafios
-* Nesse projeto tive como ensinamento algumas lógicas do JS para poder criar um modo noturno e uma função para subir ao topo da página com dois elementos distintos.
+* Nesse projeto tive como ensinamento algumas lógicas do JS para poder criar um modo noturno e uma função para subir ao topo da página com dois elementos distintos no DOM.
